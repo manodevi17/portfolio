@@ -89,21 +89,21 @@
 
 .cert-btn {
   padding: 12px 35px;
-  background: #0052a3;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
   font-size: 15px;
+  background: linear-gradient(135deg, #0052a3 0%, #00a8a8 100%);
   transition: all 0.3s ease;
   margin-top: 15px;
 }
 
 .cert-btn:hover {
-  background: #00a8a8;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 82, 163, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 82, 163, 0.15);
+  border-color: #00a8a8;
 }
 
 .awards-section {
