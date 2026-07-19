@@ -106,29 +106,6 @@
   animation: slideInUp 1s ease 0.6s both;
 }
 
-.cta-btn {
-  padding: 16px 40px;
-  font-size: 16px;
-  background: linear-gradient(135deg, #0052a3 0%, #00a8a8 100%);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 168, 168, 0.3);
-  animation: slideInUp 1s ease 0.8s both;
-}
-
-.cta-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 168, 168, 0.5);
-}
-
-.cta-btn:active {
-  transform: translateY(-2px);
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -207,12 +184,11 @@
 }
 
 .resume-btn:hover {
-  background: #00a8a8;
-  color: #0f1419;
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 168, 168, 0.4);
+  color: white;
+  background: linear-gradient(135deg, #0052a3 0%, #00a8a8 100%);
 }
 
 .resume-btn:active {
-  transform: translateY(-2px);
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #0052a3 0%, #00a8a8 100%);
 }
