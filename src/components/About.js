@@ -1,7 +1,7 @@
 import '../styles/About.css';
 
 function About() {
-  return (
+  return(
     <section id="about" className="about">
       <div className="about-container">
         <h2>ABOUT ME</h2>
@@ -17,10 +17,10 @@ function About() {
 
         <h3>EXPERIENCE</h3>
         <div className="experience">
-          <p><strong>AWS AI-Powered Cloud Engineer:</strong> Virtual Internship (January - March 2026)</p>
-          <p><strong>Full Stack Web Development:</strong> Internship (15 days)</p>
-          <p><strong>Hackathon:</strong> TN-Impact 2026 - 4th Place (Digital Twin Project)</p>
-        </div>
+          <p><strong>AWS AI-Powered Cloud Engineer:</strong> EduSkills Foundation, Virtual Internship (January - March 2026)</p>
+          <p><strong>Full Stack Web Development:</strong> Astonish Infotech, Trichy (July 2026 - 30 days)</p>
+          <p><strong>Hackathon:</strong> TN-Impact 2026 - 4th Place (February 2026, Digital Twin Project)</p>
+          </div>
       </div>
     </section>
   );

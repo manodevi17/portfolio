@@ -15,7 +15,7 @@ function Skills() {
     { name: 'Python & Flask', level: 80 },
     { name: 'AWS & Cloud', level: 75 },
     { name: 'MongoDB & MySQL', level: 80 },
-    { name: 'Node.js & Express', level: 75 }
+    { name: 'Node.js & Express.js', level: 75 }
   ];
 
   return (

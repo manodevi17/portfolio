@@ -4,12 +4,9 @@ function Home() {
   const scrollToProjects = () => {
     document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
   };
-
-  const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Mano_Resume.pdf';
-    link.click();
+  
+  const viewResume = () => {
+  window.open('/resume.pdf', '_blank');
   };
 
   return (
@@ -26,7 +23,7 @@ function Home() {
           <button className="cta-btn" onClick={scrollToProjects}>
             View My Work
           </button>
-          <button className="resume-btn" onClick={downloadResume}>
+          <button className="resume-btn" onClick={viewResume}>
             My Resume
           </button>
         </div>

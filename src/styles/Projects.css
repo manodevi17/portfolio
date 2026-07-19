@@ -39,6 +39,7 @@
   background-color: #f8fafb;
   transition: all 0.3s ease;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 3px solid #00a8a8;
 }
 
 .project-card:hover {

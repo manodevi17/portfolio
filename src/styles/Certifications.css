@@ -16,9 +16,22 @@
 .certifications h2 {
   font-size: 40px;
   margin-bottom: 25px;
-  color:#00a8a8;
+  color: #00a8a8;
   text-align: center;
   font-weight: 500;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.certifications h2::before,
+.certifications h2::after {
+  content: '─────';
+  color: white;
+  font-size: 18px;
+  flex-shrink: 0;
 }
 
 .certs-grid {
@@ -35,52 +48,69 @@
 }
 
 .cert-card {
-  background: white;
-  padding: 35px;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
   text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 3px solid #00a8a8;
 }
 
 .cert-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 82, 163, 0.15);
-  border-color: #00a8a8;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 82, 163, 0.3);
 }
 
 .cert-icon {
+  color: #9ca3af;
   font-size: 48px;
   margin-bottom: 15px;
-  display: block;
 }
 
 .cert-card h3 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 10px;
   color: #1f2937;
   font-weight: 600;
 }
 
-.issuer {
+.cert-card .issuer {
   font-size: 14px;
   color: #0052a3;
   margin-bottom: 8px;
   font-weight: 500;
 }
 
-.year {
+.cert-card .year {
   font-size: 13px;
   color: #6b7280;
-  margin: 0;
+  margin: 0 0 20px 0;
+}
+
+.cert-btn {
+  padding: 12px 35px;
+  background: #0052a3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.cert-btn:hover {
+  background: #00a8a8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 82, 163, 0.3);
 }
 
 .awards-section {
   background: white;
   padding: 40px;
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
+  border: 3px solid #00a8a8;
 }
 
 .awards-section h3 {
@@ -120,6 +150,56 @@
   margin: 0;
 }
 
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #ddd;
+  transform: rotate(90deg);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -142,6 +222,11 @@
     padding: 25px;
   }
   
+  .cert-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  
   .awards-section {
     padding: 25px;
   }
@@ -149,26 +234,4 @@
   .award-item {
     gap: 15px;
   }
-}
-
-.about h2, .skills h2, .projects h2, .certifications h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.about h2::before, .skills h2::before, .projects h2::before, .certifications h2::before,
-.about h2::after, .skills h2::after, .projects h2::after, .certifications h2::after {
-  content: '─────';
-  color: white;
-  font-size: 18px;
-  flex-shrink: 0;
-}
-
-.about h3, .skills h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
